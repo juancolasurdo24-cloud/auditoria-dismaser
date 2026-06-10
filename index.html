@@ -243,7 +243,7 @@ footer {
 
 /* ═══ PLATFORM GRID ═══════════════════════════════════════════ */
 .plat-grid {
-  display:grid; grid-template-columns:repeat(5,1fr); gap:16px;
+  display:grid; grid-template-columns:repeat(7,1fr); gap:14px;
   padding:28px 0 24px;
 }
 @media(max-width:900px){ .plat-grid { grid-template-columns:repeat(3,1fr); } }
@@ -283,6 +283,17 @@ footer {
 .pc-tt::before   { background:#010101; }
 .pc-tt.active    { border-color:#FF0050; background:#fff0f3; }
 .pc-tt.active::after { border-top-color:#FF0050; }
+
+.pc-mercado::before { background:linear-gradient(135deg,#0d6e6e,#1aa0a0); }
+.pc-mercado.active  { border-color:#0d6e6e; background:#e0f7fa; }
+.pc-mercado.active::after { border-top-color:#0d6e6e; }
+
+.pc-comp::before { background:linear-gradient(135deg,var(--navy-dk),var(--primary-dk)); }
+.pc-comp.active  { border-color:var(--primary); background:#fff5f5; }
+.pc-comp.active::after { border-top-color:var(--primary); }
+
+.logo-mercado { background:linear-gradient(135deg,#0d6e6e,#1aa0a0); }
+.logo-comp    { background:linear-gradient(135deg,var(--navy-dk),var(--primary-dk)); }
 
 .pc-li::before   { background:#0A66C2; }
 .pc-li.active    { border-color:#0A66C2; background:#f0f7ff; }
@@ -332,6 +343,8 @@ footer {
 .plat-card:nth-child(3) { animation-delay:.21s; }
 .plat-card:nth-child(4) { animation-delay:.29s; }
 .plat-card:nth-child(5) { animation-delay:.37s; }
+.plat-card:nth-child(6) { animation-delay:.45s; }
+.plat-card:nth-child(7) { animation-delay:.53s; }
 
 /* ── Active card ring pulse ────────────────────────────────── */
 @keyframes ringPulse {
@@ -660,6 +673,16 @@ h2.sec {
     <div class="pc-icon logo-tt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="#FF0050" d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/><path fill="#00F2EA" d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z" opacity=".5"/></svg></div>
     <div class="pc-name">TikTok</div>
     <span class="pc-status on">📊 Auditado</span>
+  </div>
+  <div class="plat-card pc-mercado" data-plat="mercado" onclick="showPlatform('mercado')">
+    <div class="pc-icon logo-mercado" style="font-size:24px">📊</div>
+    <div class="pc-name" style="font-size:11px;line-height:1.3">Análisis<br>de Mercado</div>
+    <span class="pc-status on">📈 Ver análisis</span>
+  </div>
+  <div class="plat-card pc-comp" data-plat="comp" onclick="showPlatform('comp')">
+    <div class="pc-icon logo-comp" style="font-size:22px">🏆</div>
+    <div class="pc-name" style="font-size:11px;line-height:1.3">Competidores</div>
+    <span class="pc-status on">⚔️ Ver análisis</span>
   </div>
 </div>
 
@@ -1385,7 +1408,14 @@ h2.sec {
 </div>
 
 <!-- ══ ANÁLISIS DE MERCADO ════════════════════════════════════════ -->
-<div style="background:white;border-radius:14px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden">
+<div class="acc-panel">
+  <div class="acc-header" onclick="togglePanel('mercado')">
+    <div class="acc-logo logo-mercado" style="font-size:20px">📊</div>
+    <div class="acc-info"><h3>Análisis de Mercado</h3></div>
+    <div class="acc-chevron" id="chev-mercado">▼</div>
+  </div>
+  <div class="acc-body" id="body-mercado">
+  <div class="acc-inner" style="padding:0">
   <div style="background:linear-gradient(135deg,var(--navy-dk) 0%,var(--navy) 60%,var(--primary-dk) 100%);padding:22px 32px 18px">
     <h2 style="color:white;font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:4px">📊 Análisis de Mercado — Tamaño del Mercado Argentina</h2>
     <p style="color:rgba(255,255,255,.7);font-size:13px">Resumen ejecutivo · Segmentación por unidad de negocio · Estimación del mercado potencial</p>
@@ -1580,10 +1610,19 @@ h2.sec {
     </div>
 
   </div>
-</div>
+  </div><!-- /acc-inner -->
+  </div><!-- /acc-body mercado -->
+</div><!-- /acc-panel mercado -->
 
 <!-- ══ COMPETIDORES ══════════════════════════════════════════════ -->
-<div style="background:white;border-radius:14px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden">
+<div class="acc-panel">
+  <div class="acc-header" onclick="togglePanel('comp')">
+    <div class="acc-logo logo-comp" style="font-size:20px">🏆</div>
+    <div class="acc-info"><h3>Competidores en Argentina</h3></div>
+    <div class="acc-chevron" id="chev-comp">▼</div>
+  </div>
+  <div class="acc-body" id="body-comp">
+  <div class="acc-inner" style="padding:0">
   <div style="background:linear-gradient(135deg,var(--navy-dk) 0%,var(--navy) 60%,var(--primary-dk) 100%);padding:22px 32px 18px">
     <h2 style="color:white;font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:4px">🏆 Principales Competidores en Argentina</h2>
     <p style="color:rgba(255,255,255,.7);font-size:13px">Análisis del ecosistema competitivo del mercado de vending</p>
@@ -1808,7 +1847,9 @@ h2.sec {
     </div>
 
   </div>
-</div>
+  </div><!-- /acc-inner -->
+  </div><!-- /acc-body comp -->
+</div><!-- /acc-panel comp -->
 
 </main>
 

@@ -90,6 +90,7 @@ main { max-width:1280px; margin:0 auto; padding:28px 32px; }
 }
 .logo-gads { background:linear-gradient(135deg,#4285F4,#34A853); }
 .logo-meta { background:linear-gradient(135deg,#0668E1 0%,#00C6FF 100%); }
+.logo-tt   { background:#010101; }
 .logo-li   { background:#0A66C2; }
 .logo-yt   { background:linear-gradient(135deg,#FF0000,#CC0000); }
 
@@ -233,7 +234,7 @@ footer {
 }
 @media print {
   body { background:white; }
-  header,.logo-gads,.logo-meta,.logo-li {
+  header,.logo-gads,.logo-meta,.logo-li,.logo-tt {
     -webkit-print-color-adjust:exact; print-color-adjust:exact;
   }
   .acc-body { display:block !important; }
@@ -242,7 +243,7 @@ footer {
 
 /* ═══ PLATFORM GRID ═══════════════════════════════════════════ */
 .plat-grid {
-  display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+  display:grid; grid-template-columns:repeat(5,1fr); gap:16px;
   padding:28px 0 24px;
 }
 @media(max-width:900px){ .plat-grid { grid-template-columns:repeat(3,1fr); } }
@@ -278,6 +279,10 @@ footer {
 .pc-meta::before { background:linear-gradient(135deg,#0668E1 0%,#00C6FF 100%); }
 .pc-meta.active  { border-color:#0668E1; background:#f0f6ff; }
 .pc-meta.active::after { border-top-color:#0668E1; }
+
+.pc-tt::before   { background:#010101; }
+.pc-tt.active    { border-color:#FF0050; background:#fff0f3; }
+.pc-tt.active::after { border-top-color:#FF0050; }
 
 .pc-li::before   { background:#0A66C2; }
 .pc-li.active    { border-color:#0A66C2; background:#f0f7ff; }
@@ -546,6 +551,7 @@ h2.sec {
       <span class="hbadge active" style="background:#0668E1;border-color:#0668E1">M Meta — auditado</span>
       <span class="hbadge active" style="background:#0A66C2;border-color:#0A66C2">in LinkedIn — auditado</span>
       <span class="hbadge active" style="background:#CC0000;border-color:#CC0000">▶ YouTube — auditado</span>
+      <span class="hbadge active" style="background:#010101;border-color:#FF0050">♪ TikTok — auditado</span>
     </div>
   </div>
 </header>
@@ -614,6 +620,12 @@ h2.sec {
       </div>
 
       <div class="pch-row">
+        <div class="pch-icon" style="background:#010101;border:1px solid #FF0050">♪</div>
+        <span class="pch-name">TikTok</span>
+        <span class="pch-status med">⚠️ 44 seguidores · baja frecuencia</span>
+      </div>
+
+      <div class="pch-row">
         <div class="pch-icon" style="background:linear-gradient(135deg,#4285F4,#0F9D58)">★</div>
         <span class="pch-name">Google Business</span>
         <span class="pch-status on">✅ 4.7⭐ · 423 reseñas</span>
@@ -643,6 +655,11 @@ h2.sec {
     <div class="pc-icon logo-yt">▶</div>
     <div class="pc-name">YouTube</div>
     <span class="pc-status on">📊 Auditado</span>
+  </div>
+  <div class="plat-card pc-tt" data-plat="tt" onclick="showPlatform('tt')">
+    <div class="pc-icon logo-tt"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="#FF0050" d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/><path fill="#00F2EA" d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z" opacity=".5"/></svg></div>
+    <div class="pc-name">TikTok</div>
+    <span class="pc-status med">⚠️ En desarrollo</span>
   </div>
 </div>
 
@@ -1218,6 +1235,97 @@ h2.sec {
         </div>
       </div>
     </section>
+
+  </div>
+  </div>
+</div>
+
+<!-- ══ TIKTOK ════════════════════════════════════════════════════ -->
+<div class="acc-panel">
+  <div class="acc-header" onclick="togglePanel('tt')">
+    <div class="acc-logo logo-tt" style="font-size:20px">♪</div>
+    <div class="acc-info">
+      <h3>TikTok — @dismaser.vending</h3>
+      <div class="acc-pills">
+        <span class="pill warn">44 seguidores</span>
+        <span class="pill info">1.32% engagement</span>
+        <span class="pill warn">Última publicación: mayo 2026</span>
+      </div>
+    </div>
+    <div class="acc-chevron" id="chev-tt">▼</div>
+  </div>
+  <div class="acc-body" id="body-tt">
+  <div class="acc-inner">
+
+    <!-- KPIs -->
+    <div class="kpi-grid" style="margin-bottom:28px">
+      <div class="kpi">
+        <div class="kpi-label">Seguidores</div>
+        <div class="kpi-val">44</div>
+        <div class="kpi-sub">@dismaser.vending</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Tasa de engagement</div>
+        <div class="kpi-val">1,32%</div>
+        <div class="kpi-sub">Promedio por publicación</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Likes promedio</div>
+        <div class="kpi-val">4,5</div>
+        <div class="kpi-sub">Por publicación</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Comentarios promedio</div>
+        <div class="kpi-val">0,25</div>
+        <div class="kpi-sub">Por publicación</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Última publicación</div>
+        <div class="kpi-val" style="font-size:15px;background:linear-gradient(135deg,#e65100,#ff8f00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Mayo 2026</div>
+        <div class="kpi-sub">⚠️ Hace más de 30 días</div>
+      </div>
+    </div>
+
+    <!-- Diagnóstico -->
+    <h2 class="sec">📊 Diagnóstico de la cuenta</h2>
+    <div style="background:#fff8e1;border:1px solid #ffcc02;border-left:4px solid #f9a825;border-radius:10px;padding:18px 20px;margin-bottom:24px">
+      <p style="font-size:14px;font-weight:600;color:#e65100;margin-bottom:10px">La cuenta @dismaser.vending está en etapa muy inicial con baja presencia y actividad irregular.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px">
+        <div>
+          <p style="font-size:12px;font-weight:700;color:#2e7d32;margin-bottom:6px">✅ Puntos positivos</p>
+          <ul style="font-size:13px;color:#3c4043;line-height:1.9;padding-left:18px">
+            <li>Cuenta creada y activa con nombre de marca</li>
+            <li>Engagement del 1,32% aceptable para el tamaño de la cuenta</li>
+            <li>Nicho (vending/expendedoras) con bajo nivel de competencia en TikTok Argentina</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:12px;font-weight:700;color:#c62828;margin-bottom:6px">⚠️ Oportunidades de mejora</p>
+          <ul style="font-size:13px;color:#3c4043;line-height:1.9;padding-left:18px">
+            <li>Solo 44 seguidores — crecimiento muy lento</li>
+            <li>Publicación irregular: última hace más de 30 días</li>
+            <li>Promedio de likes (4,5) y comentarios (0,25) muy bajos</li>
+            <li>Sin estrategia de contenido definida visible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recomendaciones -->
+    <h2 class="sec">🚀 Recomendaciones para TikTok</h2>
+    <div style="background:#f8f9fa;border:1px solid #e8eaed;border-radius:10px;padding:18px 20px;margin-bottom:8px">
+      <ul style="font-size:13px;color:#3c4043;line-height:2.2;padding-left:20px">
+        <li><strong>Frecuencia mínima:</strong> 3–4 publicaciones por semana para activar el algoritmo</li>
+        <li><strong>Formato recomendado:</strong> Videos cortos (15–30 seg) mostrando máquinas en funcionamiento, instalaciones en empresas y momentos "wow" del producto</li>
+        <li><strong>Usar tendencias de audio:</strong> TikTok prioriza contenido con sonidos en tendencia — aplicarlo a videos de producto</li>
+        <li><strong>Hashtags B2B:</strong> #vending #expendedoras #oficina #pausacafe #Argentina</li>
+        <li><strong>Call to action:</strong> Incluir siempre un CTA claro ("Escribinos para cotizar", "Link en bio")</li>
+        <li><strong>Interacción:</strong> Responder comentarios y hacer duets/stitch con contenido relevante del sector</li>
+      </ul>
+      <div style="margin-top:14px;padding:12px 14px;background:#e8f5e9;border-radius:8px;border:1px solid #66bb6a">
+        <p style="font-size:12px;color:#2e7d32"><strong>💡 Oportunidad:</strong> TikTok es actualmente el canal orgánico con mayor alcance potencial. Con contenido consistente y creativo sobre el proceso de instalación de máquinas, casos de éxito en empresas conocidas y el equipo Dismaser, es posible multiplicar los seguidores rápidamente sin inversión en pauta.</p>
+      </div>
+    </div>
 
   </div>
   </div>

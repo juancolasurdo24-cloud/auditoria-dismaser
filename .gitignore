@@ -1,0 +1,6 @@
+﻿data/
+*.csv
+*.py
+requirements.txt
+instrucciones_*.md
+logo_b64.txt

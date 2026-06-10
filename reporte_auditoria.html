@@ -89,8 +89,7 @@ main { max-width:1280px; margin:0 auto; padding:28px 32px; }
   font-weight:900; color:white; flex-shrink:0;
 }
 .logo-gads { background:linear-gradient(135deg,#4285F4,#34A853); }
-.logo-fb   { background:#1877F2; }
-.logo-ig   { background:linear-gradient(135deg,#833AB4,#E1306C,#F77737); }
+.logo-meta { background:linear-gradient(135deg,#0668E1 0%,#00C6FF 100%); }
 .logo-li   { background:#0A66C2; }
 .logo-yt   { background:linear-gradient(135deg,#FF0000,#CC0000); }
 
@@ -234,7 +233,7 @@ footer {
 }
 @media print {
   body { background:white; }
-  header,.logo-gads,.logo-fb,.logo-ig,.logo-li {
+  header,.logo-gads,.logo-meta,.logo-li {
     -webkit-print-color-adjust:exact; print-color-adjust:exact;
   }
   .acc-body { display:block !important; }
@@ -243,7 +242,7 @@ footer {
 
 /* ═══ PLATFORM GRID ═══════════════════════════════════════════ */
 .plat-grid {
-  display:grid; grid-template-columns:repeat(5,1fr); gap:16px;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
   padding:28px 0 24px;
 }
 @media(max-width:900px){ .plat-grid { grid-template-columns:repeat(3,1fr); } }
@@ -276,13 +275,9 @@ footer {
 .pc-gads.active  { border-color:#4285F4; background:#f0f4ff; }
 .pc-gads.active::after { border-top-color:#4285F4; }
 
-.pc-fb::before   { background:#1877F2; }
-.pc-fb.active    { border-color:#1877F2; background:#f0f5ff; }
-.pc-fb.active::after { border-top-color:#1877F2; }
-
-.pc-ig::before   { background:linear-gradient(90deg,#833AB4,#E1306C,#F77737); }
-.pc-ig.active    { border-color:#E1306C; background:#fff0f5; }
-.pc-ig.active::after { border-top-color:#E1306C; }
+.pc-meta::before { background:linear-gradient(135deg,#0668E1 0%,#00C6FF 100%); }
+.pc-meta.active  { border-color:#0668E1; background:#f0f6ff; }
+.pc-meta.active::after { border-top-color:#0668E1; }
 
 .pc-li::before   { background:#0A66C2; }
 .pc-li.active    { border-color:#0A66C2; background:#f0f7ff; }
@@ -548,8 +543,7 @@ h2.sec {
     </div>
     <div class="header-badges">
       <span class="hbadge active">✅ Google Ads — activo</span>
-      <span class="hbadge">⏳ Facebook — sin datos</span>
-      <span class="hbadge">⏳ Instagram — sin datos</span>
+      <span class="hbadge active" style="background:#0668E1;border-color:#0668E1">M Meta — auditado</span>
       <span class="hbadge active" style="background:#0A66C2;border-color:#0A66C2">in LinkedIn — auditado</span>
       <span class="hbadge active" style="background:#CC0000;border-color:#CC0000">▶ YouTube — auditado</span>
     </div>
@@ -614,15 +608,9 @@ h2.sec {
       </div>
 
       <div class="pch-row">
-        <div class="pch-icon" style="background:#1877F2">f</div>
-        <span class="pch-name">Facebook</span>
-        <span class="pch-status off">⏳ Sin auditar</span>
-      </div>
-
-      <div class="pch-row">
-        <div class="pch-icon" style="background:linear-gradient(135deg,#833AB4,#E1306C,#F77737)">📷</div>
-        <span class="pch-name">Instagram</span>
-        <span class="pch-status off">⏳ Sin auditar</span>
+        <div class="pch-icon" style="background:linear-gradient(135deg,#0668E1,#00C6FF)">M</div>
+        <span class="pch-name">Meta (FB + IG)</span>
+        <span class="pch-status med">⚠️ BM sin verificar · URL corregida</span>
       </div>
 
       <div class="pch-row">
@@ -641,15 +629,10 @@ h2.sec {
     <div class="pc-name">Google Ads</div>
     <span class="pc-status on">✅ Activo</span>
   </div>
-  <div class="plat-card pc-fb" data-plat="fb" onclick="showPlatform('fb')">
-    <div class="pc-icon logo-fb">f</div>
-    <div class="pc-name">Facebook</div>
-    <span class="pc-status off">⏳ Sin datos</span>
-  </div>
-  <div class="plat-card pc-ig" data-plat="ig" onclick="showPlatform('ig')">
-    <div class="pc-icon logo-ig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-    <div class="pc-name">Instagram</div>
-    <span class="pc-status off">⏳ Sin datos</span>
+  <div class="plat-card pc-meta" data-plat="meta" onclick="showPlatform('meta')">
+    <div class="pc-icon logo-meta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="34" height="34" fill="white"><text x="4" y="27" font-family="Arial" font-weight="900" font-size="26">M</text></svg></div>
+    <div class="pc-name">Meta</div>
+    <span class="pc-status off">⚠️ Observaciones</span>
   </div>
   <div class="plat-card pc-li" data-plat="li" onclick="showPlatform('li')">
     <div class="pc-icon logo-li">in</div>
@@ -821,59 +804,99 @@ h2.sec {
 </div><!-- /acc-panel gads -->
 
 
-<!-- ══ FACEBOOK ══════════════════════════════════════════════════ -->
+<!-- ══ META ═══════════════════════════════════════════════════════ -->
 <div class="acc-panel">
-  <div class="acc-header" onclick="togglePanel('fb')">
-    <div class="acc-logo logo-fb">f</div>
+  <div class="acc-header" onclick="togglePanel('meta')">
+    <div class="acc-logo logo-meta" style="font-weight:900;font-size:20px">M</div>
     <div class="acc-info">
-      <h3>Facebook</h3>
+      <h3>Meta — Facebook &amp; Instagram</h3>
       <div class="acc-pills">
-        <span class="pill none">Sin datos cargados</span>
+        <span class="pill warn">⚠️ Business Manager sin verificar</span>
+        <span class="pill good">✅ URL de Fan Page corregida</span>
+        <span class="pill none">Instagram — sin datos de pauta</span>
       </div>
     </div>
-    <div class="acc-chevron" id="chev-fb">▼</div>
+    <div class="acc-chevron" id="chev-meta">▼</div>
   </div>
-  <div class="acc-body" id="body-fb">
+  <div class="acc-body" id="body-meta">
   <div class="acc-inner">
-    <div class="placeholder">
-      <div class="ph-icon">📘</div>
-      <h3>Sin datos de Facebook Ads</h3>
-      <p>Exportá el reporte de Facebook Ads Manager y cargalo aquí para ver el análisis de rendimiento, ROI y audiencias.</p>
-      <ul class="ph-steps">
-        <li>1. Ingresá a <strong>business.facebook.com</strong> → Ads Manager</li>
-        <li>2. Seleccioná el rango de fechas deseado</li>
-        <li>3. Exportar → CSV → guardalo en <code>data/facebook/</code></li>
-        <li>4. El reporte se actualizará automáticamente</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-</div>
 
-<!-- ══ INSTAGRAM ═════════════════════════════════════════════════ -->
-<div class="acc-panel">
-  <div class="acc-header" onclick="togglePanel('ig')">
-    <div class="acc-logo logo-ig">📷</div>
-    <div class="acc-info">
-      <h3>Instagram</h3>
-      <div class="acc-pills">
-        <span class="pill none">Sin datos cargados</span>
+    <!-- KPIs Meta -->
+    <div class="kpi-grid" style="margin-bottom:28px">
+      <div class="kpi">
+        <div class="kpi-label">Fan Page</div>
+        <div class="kpi-val" style="font-size:15px">dismaserarg</div>
+        <div class="kpi-sub">✅ URL personalizada activa</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Business Manager</div>
+        <div class="kpi-val" style="font-size:15px;background:linear-gradient(135deg,#e65100,#ff8f00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Sin verificar</div>
+        <div class="kpi-sub">⚠️ No validado como negocio</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Instagram</div>
+        <div class="kpi-val" style="font-size:15px;background:linear-gradient(135deg,#9aa0a6,#bdbdbd);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Sin datos</div>
+        <div class="kpi-sub">⏳ Pauta no disponible</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Ads Manager</div>
+        <div class="kpi-val" style="font-size:15px;background:linear-gradient(135deg,#9aa0a6,#bdbdbd);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Sin exportar</div>
+        <div class="kpi-sub">⏳ Datos de pauta pendientes</div>
       </div>
     </div>
-    <div class="acc-chevron" id="chev-ig">▼</div>
-  </div>
-  <div class="acc-body" id="body-ig">
-  <div class="acc-inner">
-    <div class="placeholder">
-      <div class="ph-icon">📷</div>
-      <h3>Sin datos de Instagram Ads</h3>
-      <p>Los anuncios de Instagram se gestionan desde Facebook Ads Manager. Exportá el reporte filtrando por posición "Instagram" para ver el rendimiento específico de esta plataforma.</p>
-      <ul class="ph-steps">
-        <li>1. Facebook Ads Manager → Columnas → Desglose → Por posición</li>
+
+    <!-- Hallazgo 1: Business Manager sin verificar -->
+    <h2 class="sec">⚠️ Business Manager — Sin verificación como negocio legal</h2>
+    <div style="background:#fff8e1;border:1px solid #ffcc02;border-left:4px solid #f9a825;border-radius:10px;padding:18px 20px;margin-bottom:24px">
+      <p style="font-size:14px;font-weight:600;color:#e65100;margin-bottom:10px">Estado actual: Meta Business Manager de Dismaser S.A. no ha completado el proceso de verificación de negocio.</p>
+      <p style="font-size:13px;color:#5f6368;line-height:1.7;margin-bottom:14px">
+        La verificación de negocio en Meta es un requisito para desbloquear funciones avanzadas de publicidad (aumentar límites de gasto, acceder a Conversions API, crear audiencias personalizadas ilimitadas) y genera mayor confianza en los anuncios mostrados al público.
+      </p>
+      <p style="font-size:13px;font-weight:600;color:#1B2A3B;margin-bottom:8px">Proceso de validación — Documentación requerida:</p>
+      <ul style="font-size:13px;color:#3c4043;line-height:2;padding-left:20px">
+        <li>📄 <strong>Constancia de inscripción ARCA</strong> (ex-AFIP) — acredita actividad económica registrada</li>
+        <li>🏢 <strong>Estatuto o contrato social</strong> de Dismaser S.A.</li>
+        <li>📋 <strong>DNI del representante legal</strong> con firma</li>
+        <li>📍 <strong>Comprobante de domicilio comercial</strong> (factura de servicio a nombre de la empresa)</li>
+      </ul>
+      <p style="margin-top:14px;font-size:12px;color:#5f6368">
+        💡 <strong>Acción recomendada:</strong> Ingresar a <strong>business.facebook.com/settings → Centro de seguridad → Verificar negocio</strong> y completar el proceso con la documentación listada.
+      </p>
+    </div>
+
+    <!-- Hallazgo 2: URL de Fan Page corregida -->
+    <h2 class="sec">✅ Fan Page — URL personalizada correctamente configurada</h2>
+    <div style="background:#f8f9fa;border:1px solid #e8eaed;border-radius:10px;padding:18px 20px;margin-bottom:24px">
+      <p style="font-size:13px;color:#5f6368;line-height:1.7;margin-bottom:16px">
+        La página de Facebook de Dismaser S.A. fue optimizada con un nombre de usuario personalizado, lo que mejora la identidad de marca, facilita la búsqueda directa y permite compartir la URL de forma profesional.
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div style="background:#fff3e0;border:1px solid #ffb300;border-radius:8px;padding:14px 16px">
+          <div style="font-size:11px;font-weight:600;color:#e65100;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">⚠️ URL anterior (sin nombre de usuario)</div>
+          <code style="font-size:11px;color:#b06000;word-break:break-all">facebook.com/profile.php?id=100068877145333</code>
+          <p style="font-size:11px;color:#9aa0a6;margin-top:6px">URL genérica, difícil de recordar y compartir</p>
+        </div>
+        <div style="background:#e8f5e9;border:1px solid #66bb6a;border-radius:8px;padding:14px 16px">
+          <div style="font-size:11px;font-weight:600;color:#2e7d32;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">✅ URL actual (personalizada)</div>
+          <code style="font-size:12px;color:#1b5e20;font-weight:600">facebook.com/dismaserarg</code>
+          <p style="font-size:11px;color:#9aa0a6;margin-top:6px">Nombre de usuario claro, identificable y de marca</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram -->
+    <h2 class="sec">📷 Instagram — Sin datos de pauta disponibles</h2>
+    <div style="background:#f8f9fa;border:1px solid #e8eaed;border-radius:10px;padding:18px 20px;margin-bottom:8px">
+      <p style="font-size:13px;color:#5f6368;line-height:1.7;margin-bottom:14px">
+        Los anuncios de Instagram se gestionan desde Meta Ads Manager. Para incluir el análisis de rendimiento de Instagram en esta auditoría, es necesario exportar el reporte con desglose por posición.
+      </p>
+      <ul style="font-size:13px;color:#3c4043;line-height:2;padding-left:20px">
+        <li>1. Meta Ads Manager → Columnas → Desglose → <strong>Por posición</strong></li>
         <li>2. Filtrar por <strong>Instagram Feed / Stories / Reels</strong></li>
-        <li>3. Exportar CSV y cargarlo aquí</li>
+        <li>3. Exportar CSV y cargar en <code>data/facebook/</code></li>
       </ul>
     </div>
+
   </div>
   </div>
 </div>

@@ -1747,6 +1747,158 @@ h2.sec {
       </div>
     </div>
 
+    <!-- ══ MERCOSUR TOGGLE ══ -->
+    <div style="margin-top:24px;text-align:center">
+      <button onclick="(function(){var s=document.getElementById('mercosur-detail');var open=s.style.display!=='none';s.style.display=open?'none':'block';document.getElementById('chev-merc').style.transform=open?'':'rotate(180deg)';document.getElementById('btn-merc-txt').textContent=open?'🌎 Ver competidores en MERCOSUR y Perú':'🌎 Ocultar competidores MERCOSUR y Perú';})()" style="background:linear-gradient(135deg,var(--navy-dk),var(--navy));color:white;border:none;border-radius:10px;padding:12px 28px;font-size:13px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:10px;box-shadow:0 2px 8px rgba(0,0,0,.15)">
+        <span id="btn-merc-txt">🌎 Ver competidores en MERCOSUR y Perú</span>
+        <span id="chev-merc" style="font-size:11px;transition:transform .3s">▼</span>
+      </button>
+      <p style="font-size:11px;color:#9aa0a6;margin-top:8px">30 empresas verificadas · 6 países · Ninguna combina HoReCa + Sanitización</p>
+    </div>
+
+    <!-- ══ MERCOSUR DETAIL ══ -->
+    <div id="mercosur-detail" style="display:none;margin-top:20px">
+
+      <div style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border:2px solid #66bb6a;border-radius:10px;padding:14px 18px;margin-bottom:20px">
+        <p style="font-size:13px;font-weight:800;color:#1b5e20;margin-bottom:4px">🏆 Ventaja diferencial única en toda la región</p>
+        <p style="font-size:12px;color:#2e7d32;line-height:1.6">En <strong>30 empresas de 6 países</strong>, ninguna combina HoReCa + Sanitización. Solo Eurovending Chile y Peruvian Vending tienen HoReCa parcial. La Sanitización integrada al vending es <strong>territorio virgen en toda América del Sur</strong>.</p>
+      </div>
+
+      <!-- BRASIL -->
+      <div style="margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid #e8eaed">
+        <div style="background:linear-gradient(90deg,#009c3b,#006400);padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🇧🇷</span>
+          <h4 style="color:white;font-size:13px;font-weight:700;margin:0;flex:1">Brasil — 5 competidores</h4>
+          <span style="font-size:11px;color:rgba(255,255,255,.65)">Concentrados en São Paulo</span>
+        </div>
+        <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr style="background:#f5f5f5;color:#3c4043">
+            <th style="padding:8px 12px;text-align:left;font-weight:700">Empresa</th>
+            <th style="padding:8px 8px;text-align:center;font-weight:700">Agua</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café auto</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café semi</th><th style="padding:8px 8px;text-align:center;font-weight:700">Snack</th><th style="padding:8px 8px;text-align:center;font-weight:700">Frías</th><th style="padding:8px 8px;text-align:center;font-weight:700">HoReCa</th><th style="padding:8px 8px;text-align:center;font-weight:700">Sanitiz.</th><th style="padding:8px 8px;text-align:center;font-weight:700">Total</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">Brasil Vending<br><span style="font-size:10px;color:#9aa0a6">📍 São Paulo</span></td><td style="padding:9px 8px;text-align:center;color:#ff9800;font-weight:700">~</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0;background:#fafafa"><td style="padding:9px 12px;color:#3c4043">Fox Vending Brasil<br><span style="font-size:10px;color:#9aa0a6">📍 São Paulo</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">Snack Café<br><span style="font-size:10px;color:#9aa0a6">📍 São Paulo</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0;background:#fafafa"><td style="padding:9px 12px;color:#3c4043">Pracafé<br><span style="font-size:10px;color:#9aa0a6">📍 São Paulo / Nacional</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr><td style="padding:9px 12px;color:#3c4043">M&amp;G Café<br><span style="font-size:10px;color:#9aa0a6">📍 São Paulo · +400 productos</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+          </tbody>
+        </table></div>
+        <div style="background:#f8f9fa;padding:8px 14px;border-top:1px solid #e8eaed"><p style="font-size:11px;color:#5f6368;margin:0">💡 Todas concentradas en café + snack + frías. Ninguna tiene HoReCa ni Sanitización. Mercado enorme pero más fragmentado que Argentina.</p></div>
+      </div>
+
+      <!-- URUGUAY -->
+      <div style="margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid #e8eaed">
+        <div style="background:linear-gradient(90deg,#002D8F,#1a4db8);padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🇺🇾</span>
+          <h4 style="color:white;font-size:13px;font-weight:700;margin:0;flex:1">Uruguay — 3 competidores</h4>
+          <span style="font-size:11px;color:rgba(255,255,255,.65)">Mercado pequeño · Oportunidad para Dismaser</span>
+        </div>
+        <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr style="background:#f5f5f5;color:#3c4043">
+            <th style="padding:8px 12px;text-align:left;font-weight:700">Empresa</th>
+            <th style="padding:8px 8px;text-align:center;font-weight:700">Agua</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café auto</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café semi</th><th style="padding:8px 8px;text-align:center;font-weight:700">Snack</th><th style="padding:8px 8px;text-align:center;font-weight:700">Frías</th><th style="padding:8px 8px;text-align:center;font-weight:700">HoReCa</th><th style="padding:8px 8px;text-align:center;font-weight:700">Sanitiz.</th><th style="padding:8px 8px;text-align:center;font-weight:700">Total</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">Cafe.uy<br><span style="font-size:10px;color:#9aa0a6">📍 Montevideo · desde 1996 · +500 máq.</span></td><td style="padding:9px 8px;text-align:center;color:#ff9800;font-weight:700">~</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0;background:#fafafa"><td style="padding:9px 12px;color:#3c4043">Uruguay Vending<br><span style="font-size:10px;color:#9aa0a6">📍 Montevideo</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr><td style="padding:9px 12px;color:#3c4043">Global Vending (Blika)<br><span style="font-size:10px;color:#9aa0a6">📍 Montevideo</span></td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#ff9800;font-weight:700">~</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">3/7</span></td></tr>
+          </tbody>
+        </table></div>
+        <div style="background:#f8f9fa;padding:8px 14px;border-top:1px solid #e8eaed"><p style="font-size:11px;color:#5f6368;margin:0">💡 Mercado subdesarrollado, sin HoReCa ni Sanitización. Oportunidad de expansión más accesible por cercanía con Argentina.</p></div>
+      </div>
+
+      <!-- PARAGUAY -->
+      <div style="margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid #e8eaed">
+        <div style="background:linear-gradient(90deg,#D52B1E,#a01e14);padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🇵🇾</span>
+          <h4 style="color:white;font-size:13px;font-weight:700;margin:0;flex:1">Paraguay — 3 competidores</h4>
+          <span style="font-size:11px;color:rgba(255,255,255,.65)">Asunción (mercado principal)</span>
+        </div>
+        <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr style="background:#f5f5f5;color:#3c4043">
+            <th style="padding:8px 12px;text-align:left;font-weight:700">Empresa</th>
+            <th style="padding:8px 8px;text-align:center;font-weight:700">Agua</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café auto</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café semi</th><th style="padding:8px 8px;text-align:center;font-weight:700">Snack</th><th style="padding:8px 8px;text-align:center;font-weight:700">Frías</th><th style="padding:8px 8px;text-align:center;font-weight:700">HoReCa</th><th style="padding:8px 8px;text-align:center;font-weight:700">Sanitiz.</th><th style="padding:8px 8px;text-align:center;font-weight:700">Total</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">Cafepar SA<br><span style="font-size:10px;color:#9aa0a6">📍 Asunción · ISO 9001 · Lavazza · +1200 máq.</span></td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#ff9800;font-weight:700">~</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0;background:#fafafa"><td style="padding:9px 12px;color:#3c4043">Café Corner SRL<br><span style="font-size:10px;color:#9aa0a6">📍 Fernando de la Mora · 23 años · hoteles y rest.</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#ff9800;font-weight:700">~</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">3/7</span></td></tr>
+            <tr><td style="padding:9px 12px;color:#3c4043">Cafexpress<br><span style="font-size:10px;color:#9aa0a6">📍 Asunción · illy + Cimbali · café premium</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">3/7</span></td></tr>
+          </tbody>
+        </table></div>
+        <div style="background:#f8f9fa;padding:8px 14px;border-top:1px solid #e8eaed"><p style="font-size:11px;color:#5f6368;margin:0">💡 Cafepar es la más completa del país (Lavazza + Waterlogic + gastronómico). Ninguna tiene Sanitización. HoReCa solo parcial.</p></div>
+      </div>
+
+      <!-- CHILE -->
+      <div style="margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid #e8eaed">
+        <div style="background:linear-gradient(90deg,#D52B1E,#c0392b);padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🇨🇱</span>
+          <h4 style="color:white;font-size:13px;font-weight:700;margin:0;flex:1">Chile — 4 competidores</h4>
+          <span style="font-size:11px;color:rgba(255,255,255,.65)">Mercado más maduro de la región</span>
+        </div>
+        <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr style="background:#f5f5f5;color:#3c4043">
+            <th style="padding:8px 12px;text-align:left;font-weight:700">Empresa</th>
+            <th style="padding:8px 8px;text-align:center;font-weight:700">Agua</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café auto</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café semi</th><th style="padding:8px 8px;text-align:center;font-weight:700">Snack</th><th style="padding:8px 8px;text-align:center;font-weight:700">Frías</th><th style="padding:8px 8px;text-align:center;font-weight:700">HoReCa</th><th style="padding:8px 8px;text-align:center;font-weight:700">Sanitiz.</th><th style="padding:8px 8px;text-align:center;font-weight:700">Total</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:2px solid #ffd600;background:linear-gradient(90deg,#fffde7,white)"><td style="padding:9px 12px;color:#3c4043;font-weight:600">⚠️ Eurovending Chile<br><span style="font-size:10px;color:#9aa0a6;font-weight:400">📍 Santiago · EVOCA exclusivo · único con HoReCa en MERCOSUR</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#ffd600;color:#5f4200;border-radius:10px;padding:2px 7px;font-size:11px;font-weight:700">5/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0;background:#fafafa"><td style="padding:9px 12px;color:#3c4043">ItaliaVending Chile<br><span style="font-size:10px;color:#9aa0a6">📍 Santiago · pionero en touchscreen</span></td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">5/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">FVC Vending<br><span style="font-size:10px;color:#9aa0a6">📍 Santiago</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">3/7</span></td></tr>
+            <tr><td style="padding:9px 12px;color:#3c4043">Caramelo Vending<br><span style="font-size:10px;color:#9aa0a6">📍 Santiago</span></td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">5/7</span></td></tr>
+          </tbody>
+        </table></div>
+        <div style="background:#fff8e1;padding:8px 14px;border-top:1px solid #e8eaed"><p style="font-size:11px;color:#b06000;margin:0">⚠️ <strong>Eurovending Chile</strong> es el único competidor en todo el MERCOSUR con HoReCa confirmado, pero aún sin Sanitización. Benchmark más cercano a Dismaser en la región.</p></div>
+      </div>
+
+      <!-- PERÚ -->
+      <div style="margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid #e8eaed">
+        <div style="background:linear-gradient(90deg,#D91023,#a50c1a);padding:10px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:18px">🇵🇪</span>
+          <h4 style="color:white;font-size:13px;font-weight:700;margin:0;flex:1">Perú — 5 competidores</h4>
+          <span style="font-size:11px;color:rgba(255,255,255,.65)">Lima (mercado principal)</span>
+        </div>
+        <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr style="background:#f5f5f5;color:#3c4043">
+            <th style="padding:8px 12px;text-align:left;font-weight:700">Empresa</th>
+            <th style="padding:8px 8px;text-align:center;font-weight:700">Agua</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café auto</th><th style="padding:8px 8px;text-align:center;font-weight:700">Café semi</th><th style="padding:8px 8px;text-align:center;font-weight:700">Snack</th><th style="padding:8px 8px;text-align:center;font-weight:700">Frías</th><th style="padding:8px 8px;text-align:center;font-weight:700">HoReCa</th><th style="padding:8px 8px;text-align:center;font-weight:700">Sanitiz.</th><th style="padding:8px 8px;text-align:center;font-weight:700">Total</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">Vendomática Perú<br><span style="font-size:10px;color:#9aa0a6">📍 Callao · Lima · Arequipa · Trujillo · Chiclayo · Arca Continental</span></td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">5/7</span></td></tr>
+            <tr style="border-bottom:2px solid #ffd600;background:linear-gradient(90deg,#fffde7,white)"><td style="padding:9px 12px;color:#3c4043;font-weight:600">⚠️ Peruvian Vending<br><span style="font-size:10px;color:#9aa0a6;font-weight:400">📍 Lima · Jofemar exclusivo · +12 años · HoReCa + sanitización parcial</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#ff9800;font-weight:700">~</td><td style="padding:9px 8px;text-align:center"><span style="background:#ffd600;color:#5f4200;border-radius:10px;padding:2px 7px;font-size:11px;font-weight:700">5/7~</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0;background:#fafafa"><td style="padding:9px 12px;color:#3c4043">Expendomax SAC<br><span style="font-size:10px;color:#9aa0a6">📍 Lima · desde 1996 · +1300 máq.</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">3/7</span></td></tr>
+            <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:9px 12px;color:#3c4043">Vendrich<br><span style="font-size:10px;color:#9aa0a6">📍 Lima / Nacional · garantía 12 meses</span></td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">4/7</span></td></tr>
+            <tr><td style="padding:9px 12px;color:#3c4043">Dispenser Perú<br><span style="font-size:10px;color:#9aa0a6">📍 Lima · +23 años · especialista puro en agua</span></td><td style="padding:9px 8px;text-align:center">✅</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center;color:#bdbdbd">—</td><td style="padding:9px 8px;text-align:center"><span style="background:#e0e0e0;color:#5f6368;border-radius:10px;padding:2px 7px;font-size:11px">1/7</span></td></tr>
+          </tbody>
+        </table></div>
+        <div style="background:#fff8e1;padding:8px 14px;border-top:1px solid #e8eaed"><p style="font-size:11px;color:#b06000;margin:0">⚠️ <strong>Peruvian Vending</strong> es el competidor más completo de toda la región LATAM: HoReCa + sanitización parcial (toallas higiénicas). Pero sin la integración completa de Dismaser.</p></div>
+      </div>
+
+      <!-- RESUMEN REGIONAL -->
+      <div style="background:linear-gradient(135deg,var(--navy-dk),var(--navy));border-radius:10px;padding:16px 20px">
+        <h4 style="color:white;font-size:13px;font-weight:700;margin-bottom:12px">📊 Resumen regional — 30 competidores verificados en 6 países</h4>
+        <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead><tr style="border-bottom:1px solid rgba(255,255,255,.2)">
+            <th style="padding:7px 10px;text-align:left;color:rgba(255,255,255,.7);font-weight:600">País</th>
+            <th style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.7);font-weight:600">Empresas</th>
+            <th style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.7);font-weight:600">HoReCa</th>
+            <th style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.7);font-weight:600">Sanitización</th>
+          </tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.1)"><td style="padding:7px 10px;color:white;font-weight:700">🇦🇷 Argentina — Dismaser</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">1</td><td style="padding:7px 10px;text-align:center">✅</td><td style="padding:7px 10px;text-align:center">✅</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.1)"><td style="padding:7px 10px;color:rgba(255,255,255,.8)">🇦🇷 Argentina (competidores)</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">10</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.1)"><td style="padding:7px 10px;color:rgba(255,255,255,.8)">🇧🇷 Brasil</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">5</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.1)"><td style="padding:7px 10px;color:rgba(255,255,255,.8)">🇺🇾 Uruguay</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">3</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.1)"><td style="padding:7px 10px;color:rgba(255,255,255,.8)">🇵🇾 Paraguay</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">3</td><td style="padding:7px 10px;text-align:center;color:#ffcc80">~ parcial</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.1)"><td style="padding:7px 10px;color:rgba(255,255,255,.8)">🇨🇱 Chile</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">4</td><td style="padding:7px 10px;text-align:center;color:#ffcc80">~ solo Eurovending</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td></tr>
+            <tr><td style="padding:7px 10px;color:rgba(255,255,255,.8)">🇵🇪 Perú</td><td style="padding:7px 10px;text-align:center;color:rgba(255,255,255,.8)">5</td><td style="padding:7px 10px;text-align:center;color:#ffcc80">~ solo Peruvian V.</td><td style="padding:7px 10px;text-align:center;color:#ef9a9a">❌</td></tr>
+          </tbody>
+        </table></div>
+        <p style="color:rgba(255,255,255,.75);font-size:11px;margin-top:12px;line-height:1.6">~ = parcial / mencionado &nbsp;·&nbsp; En toda la región, <strong style="color:white">ninguna empresa combina HoReCa + Sanitización</strong>. La propuesta de Dismaser es única en América del Sur.</p>
+      </div>
+
+    </div><!-- /mercosur-detail -->
+
   </div>
   </div><!-- /acc-inner -->
   </div><!-- /acc-body mercado -->
